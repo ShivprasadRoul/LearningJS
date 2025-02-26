@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: repeat(100,60px);
+            grid-template-columns: 60px 100px 60px;
+            grid-gap: 3px;
+        }
+        .child{
+            border: 1px dashed black;
+        }
+        .item1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .item4{
+            grid-column-start: 2;
+            grid-column-end: span 4;
+        }
+        .item3{
+            /*grid-row: 2/4;
+            grid-column: 3/6;
+            grid-area: row start/col start/ row end/ col end;*/
+            grid-area: 2/3/4/6;
+            
+        }
+        .website{
+            border: 1px solid;
+            display: grid;
+            grid-area: 
+            "h h h h"
+            "c c c a"
+            "c c c a"
+            "c c c a"
+            "f f f f";
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+        }
+        .header {
+            border: 1px dashed;
+            grid-area: h;
+        }
+        
+        .content {
+            border: 1px dashed;
+            grid-area: c;
+        }
+        
+        .ads {
+            border: 1px dashed;
+            grid-area: a;
+        }
+        
+        .footer {
+            border: 1px dashed;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+        <div class="child item1">Child 1</div>      
+        <div class="child">Child 2</div>
+        <div class="child item3">Child 3</div>
+        <div class="child item4">Child 4</div>
+        <div class="child">Child 5</div>
+    </div>  -->
+    <div class="website">
+        <div class="Header item">Header</div>
+        <div class="content item">content</div>
+        <div class="ads item">Ads</div>
+        <div class="footer item">footer</div>
+    </div>
+</body>
+</html>

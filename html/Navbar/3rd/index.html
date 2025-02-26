@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            padding: 0;
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .Nav-content {
+            display: flex;
+            gap: 20px;
+        }
+        .dropdown {
+            position: relative;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            min-width: 120px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            flex-direction: column;
+        }
+        .dropdown-content p {
+            margin: 5px 0;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .dropdown-content p:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: flex;
+        }
+        .login-signup {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .Login {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .Signup {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="Nav-content">
+            <h1>Home</h1>
+            <div class="dropdown">
+                <h1>About</h1>
+                <div class="dropdown-content">
+                    <p>Our Story</p>
+                    <p>Team</p>
+                    <p>Career</p>
+                </div>
+            </div>
+            <h1>Contact Us</h1>
+        </div>
+        <div class="login-signup">
+            <button class="Login">Login</button>
+            <button class="Signup">Signup</button>
+        </div>
+    </nav>
+</body>
+</html>

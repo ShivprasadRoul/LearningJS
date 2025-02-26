@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            background-color: black;
+            width: 30%;
+            color: aliceblue;
+            font-size: smaller;
+        }
+        .Nav-content{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .Nav-content h1:hover{
+            background-color: aquamarine;
+        }
+        .login-signup{
+            display: flex;
+            flex-direction: column;
+            gap:5px ;
+            margin-bottom: 10px;
+        }
+        button{
+            background-color: blue;
+            color: antiquewhite;
+            font-style: italic;
+            cursor: pointer;
+            border: none;
+            border-radius: 7px;
+        }
+        button::backdrop{
+            background-color: rgba(255, 255, 255, 0.4);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);  
+        }
+        button:hover{
+            background-color: aquamarine;
+            color: black;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="Logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="Nav-content">
+            <h1>Home</h1>
+            <h1>About</h1>
+            <h1>Contact Us</h1>
+        </div>
+        <div class="login-signup">
+            <button class="Login">Login</button>
+            <button class="Signup">Signup</button>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bento grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      padding:0;
+      margin:0;   
+      height: 100vh;
+      width: 100vw;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .gridlayout{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(3,1fr);
+      gap: 20px;
+      height: 70%;
+      width: 80%; 
+      padding: 2%;
+    }
+    .card1{
+      background-color: antiquewhite;
+      grid-area: 1/1/1/1;
+      font-size: 25px;
+      font-family:"C:\Users\KIIT\Desktop\Cohort 1\code\assignment\bento-grid-main\assets\fonts\DMSans-VariableFont_opsz,wght.ttf";
+      font-weight: bold;
+    }
+    .card2{
+      background-color: blueviolet;
+      grid-area: 1/2/2/4;
+      line-height: 2%;
+      line-break: auto;
+      font-size: 30px;
+      font-family:"C:\Users\KIIT\Desktop\Cohort 1\code\assignment\bento-grid-main\assets\fonts\DMSans-Italic-VariableFont_opsz,wght.ttf";
+      color: aliceblue;
+    }
+    .card3{
+      background-color: #dcd1fc;
+      grid-area: 1/4/3/5;
+      font-size: 30px;
+      font-family:sans-serif;
+      
+    }
+    .card4{
+      background-color: yellow;
+      grid-area: 2/1/4/2;
+    }
+    .card5{
+      background-color: #f7d2c4;
+      grid-area: 2/2/4/3;
+    }
+    .card6{
+      background-color: yellow;
+      grid-area: 2/3/3/4;
+    }
+    .card7{
+      background-color: #7651dc;
+      grid-area: 3/3/4/5;
+    }
+    div{
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="gridlayout">
+    <div class="card1">
+      <p>Create and schedule content <em style="color: #7651dc;">quicker</em>.</p>
+      <img src="../bento-grid-main/assets/images/illustration-create-post.webp" alt="" style="width: 60%;">
+  </div>
+  <div class="card2">
+    <p>Social Media 10x </p> <p><em>Faster</em> with AI</p>
+    <br>
+    <img src="../bento-grid-main/assets/images/illustration-five-stars.webp" alt="raiting" style="height: 10%;">
+     <p style="font-size: small;">Over 4,000 5-star reviews</p> 
+    
+  </div>
+  <div class="card3">
+    <p style="font-weight: bold;">Schedule to social media.</p>
+    <img src="../bento-grid-main/assets/images/illustration-schedule-posts.webp" style="width: 187; height: 255px; object-fit: cover; object-position: -20% 0;" >
+    <p style="font-size:medium; ">Optimize post timings to publish content at the perfect time for your audience.</p>
+  </div>
+  <div class="card4"><p>Write your content using AI.</p> </div>
+  <div class="card5">
+    <p>Manage multiple accounts and platforms.</p>
+    <p>>56% faster audience growth</p>
+  </div>
+  <div class="card6"><p>Maintain a consistent posting schedule.</p> </div>
+  <div class="card7"><p>Grow followers with non-stop content.</p> </div>  
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Shiv</a>.
+  </div>
+</body>
+</html>

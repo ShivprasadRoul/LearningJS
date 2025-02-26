@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201440%20320'%3E%3Cpath%20fill='%230099ff'%20fill-opacity='1'%20d='M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            height: 100%;
+            background: linear-gradient(135deg, #68a941, #385c23);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, .4);
+            padding: 40px;
+            border-radius: 10px;
+            border: none;
+            max-width: 400px;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input[type="email"] {
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #385c23;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #68a941;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Coming Soon</h1>
+            <p>We are working hard to bring something amazing!!!</p>
+            <br>
+            <p>Stay Tuned!!!</p>
+            <form action="#" method="get" id="Notify">
+                <label for="email" class="sr-only">Enter your email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Notify Me</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

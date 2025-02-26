@@ -1,0 +1,267 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brave New Tab</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url('bridge.jpg'); /* Replace with your bridge image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: lightgray;
+}
+
+.top-bar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 10px;
+  height: 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: none;
+  background-color: #444;
+  color: white;
+}
+
+.bookmarks-bar {
+  display: flex;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: lightgray;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat span {
+  font-size: 2em;
+  color: orange;
+  font-weight: bold;
+}
+
+.speed-dial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.speed-dial-item {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+
+.search-container {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.search-input {
+  width: calc(100% - 30px);
+  padding: 5px;
+  border: none;
+  background-color: #444;
+  color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #444;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.news-snippet {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  color: gray;
+}
+
+.news-headline {
+  font-weight: bold;
+  color: #333;
+}
+
+.brave-features {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.brave-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.brave-feature-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.brave-button {
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.photo-credit {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: auto;
+  padding: 10px;
+}
+
+.customize-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+  }
+  .stats {
+    flex-direction: column;
+  }
+  .speed-dial {
+    flex-direction: column;
+  }
+  .search-container {
+    width: 100%;
+  }
+  .brave-features {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <div>
+    <!-- Browser controls -->
+  </div>
+  <div class="search-bar"><input type="text" placeholder="Search the web privately"></div>
+  <div>
+    <!-- Browser controls -->
+    <button>All Bookmarks</button>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><span>306,806</span><br>Trackers & ads blocked</div>
+  <div class="stat"><span>1.69 GB</span><br>Bandwidth saved</div>
+  <div class="stat"><span>4.3 hours</span><br>Time saved</div>
+</div>
+
+<div class="speed-dial">
+  <!-- Speed dial items (icons and labels) -->
+  <div class="speed-dial-item">
+    <img src="chatgpt.png" alt="ChatGPT">
+    <p>ChatGPT</p>
+  </div>
+  <div class="speed-dial-item">
+    <img src="gmail.png" alt="Gmail">
+    <p>Inbox (25,...)</p>
+  </div>
+  <div class="speed-dial-item">
+    <img src="youtube.png" alt="YouTube">
+    <p>YouTube</p>
+  </div>
+  <div class="speed-dial-item">
+    <img src="youtube.png" alt="YouTube">
+    <p>YouTube</p>
+  </div>
+  <div class="speed-dial-item">
+    <img src="hydrahd.png" alt="HydraHD">
+    <p>HydraHD</p>
+  </div>
+  <div class="speed-dial-item">
+    <img src="primevideo.png" alt="Prime Video">
+    <p>Prime Vid...</p>
+  </div>
+</div>
+
+<div class="search-container">
+  <input type="text" class="search-input" placeholder="Search the web privately">
+  <div class="search-icon">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Search icon SVG -->
+    </svg>
+  </div>
+</div>
+
+<div class="news-snippet">
+  <p><strong>India's Got Latent' row: Maharashtra government orders inquiry into Ranveer Allahbadia controversy</strong></p>
+  <p>Hindustan Times<span>&#8226;</span>Top News<span>&#8226;</span>3 hours ago</p>
+  <img src="news-image.jpg" alt="News Image" style="width:50px; height:50px; float:right;">
+</div>
+
+<div class="brave-features">
+  <div class="brave-feature"><img src="talk-icon.png" alt="Talk">Talk</div>
+  <div class="brave-feature"><img src="rewards-icon.png" alt="Rewards">Rewards</div>
+  <div class="brave-feature"><img src="vpn-icon.png" alt="Brave VPN">Brave VPN<br>Powered by Guardian<br>
+    <ul style="list-style-type: disc; margin-left: 20px; font-size:0.8em;">
+      <li>Extra privacy & security online</li>
+      <li>Hide your IP & change your location</li>
+      <li>Protect every app on your device</li>
+    </ul>
+    <button class="brave-button">Start free trial</button>
+    <p>Already purchased Brave VPN?</p>
+  </div>
+</div>
+
+<div class="photo-credit">Photo by John H. Ng</div>
+<button class="customize-button">Customize</button>
+
+</body>
+</html>
+```

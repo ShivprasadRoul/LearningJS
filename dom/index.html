@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js demo dom</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .hidden{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>js dom fun eg.</h1>
+    <section id="eg1">
+        <h2 class="highlight">Accessing Dom Elements</h2>
+        <p id="mypara">
+            this is a para. click the button to change me!
+        </p>
+        <button id="changebuttontext">Change text</button>
+    </section>
+    <section id="eg2">
+        <h2>Traversing the dom</h2>
+        <ul id="citieslist">
+            <id>New Del</id>
+            <id>Jaipur</id>
+            <id>Ahmedabad</id>
+        </ul>
+        <button id="highlightfirst">Highlight First City</button>
+    </section>
+    <section id="eg3">
+        <h2>manipulating dom element</h2>
+        <div id="coffeeorder">Order: <span id="coffeetype">late</span></div>
+        <button id="changeorder">Change order to espresso</button>
+    </section>
+
+    <section id="eg4">
+        <h2>creating and inserting elements</h2>
+        <button id="addnewitem">Add a new item to the shoping list</button>
+        <ul id="shopinglist">
+            <li>Bread</li>
+            <li>Milk</li>
+        </ul>
+    </section>
+
+    <section id="eg5">
+        <h2>Removing dom element </h2>
+            <ul id="tasklist">
+                <li>task 1 </li>
+                <li>Task 2</li>
+                <li>Task 3</li>
+            </ul>
+            <button id="removelasttask">remove last task</button>
+    </section>
+
+    <!—— Example 7: Event Delegation
+<section id="example—7">
+        <h2>Event Delegation</h2>
+<ul id="teaList">
+    <li class="teaItem">Green Tea</li>
+    <li class="teaItem">Black</li>
+    <li class="teaItem">Oolong Tea</li>
+    </li>
+<p>Click on any tea to select it!</p>
+</section>
+
+<section
+<h2>Form Handling</h2>
+<form id="feedbackForm">
+    <label for="feedbackForm">your feedback:</label>
+    <input type="text" id="feedbackInput" placeholder="Enter Feedback" />
+    <button type="submit">Submit Feedback</button>
+</form>
+<p id="feedbackDisplay"></p>
+</section>
+    
+    <script difer src="./script.js"></script>
+</body>
+</html>
