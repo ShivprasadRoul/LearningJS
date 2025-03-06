@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#taskentry{
+    border-radius: 5px;
+    padding: 7px;
+    text-align: center;
+}
+#submitbutton{
+    border-radius: 3px;
+    padding: 5px;
+    background-color: greenyellow;
+    color: forestgreen;
+    font-weight:900
+}
+.input_filde{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.showcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+    height: 40%;
+    margin-top: 10px;
+}
+
+.todotaskhedding{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#todoitems{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:20px;
+    gap: 10px;
+
+}

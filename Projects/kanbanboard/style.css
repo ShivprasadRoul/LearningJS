@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 120px;
+    padding: 20px;
+}
+.cards{
+    border: 1px solid;
+    border-radius: 9px;
+    height: 70vh;
+    width: 350px;
+    text-align:left;
+    background: #EBECF0;
+    color: #172B4D;
+    padding: 15px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+}
